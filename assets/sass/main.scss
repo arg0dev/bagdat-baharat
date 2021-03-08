@@ -1,0 +1,281 @@
+$black: #000;
+$white: #fff;
+$green: #106C5A;
+$custom: #F3F1EA;
+$clear: none !important;
+$reset: initial !important;
+$mainFont: 'Open Sans', sans-serif;
+$titleFont: 'Core Rhino 85';
+
+@media only screen and (max-width: 1024px) {
+    .absoluteChk {
+        position: absolute !important;
+        left: 0;
+        right: 0;
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .social {
+        left: 2vw !important;
+    }
+}
+
+@font-face {
+    font-family: 'Core Rhino 85';
+    src: url('/assets/fonts/CoreRhino85Black.woff2') format('woff2'),
+        url('/assets/fonts/CoreRhino85Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.col-md-7 {
+    img {
+        pointer-events: $clear;
+    }
+}
+
+.inkBlot {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 1;
+    transition: all ease 0.5;
+  }
+
+
+  .halfOp {
+      opacity: 0.5;
+      transition: all ease 1s;
+  }
+
+.bg-transparent {
+    background: $clear;
+}
+
+button {
+    outline: $clear;
+    border: $clear;
+}
+
+.social{
+    z-index: 999;
+    position: fixed;
+    left: 5vw;
+    top: 47.3%;
+    right: 0;
+    width: 50px;
+    .firstClass {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-radius: 5em;
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+        -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+        box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+        background: $white;
+    }
+
+    .secondClass {
+        @extend .firstClass;
+        img {
+            margin-top: -0.3em;
+        }
+    }
+
+    a {
+        color: $green;
+        &:hover {
+            color: $green;
+        }
+    }
+    i {
+        margin-bottom: 1em;
+    }
+
+    i.fab.fa-instagram {
+        margin-bottom: auto !important;
+    }
+}
+
+.t150 {
+    padding: 1 !important;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    img {
+        margin-top: -0.2em
+    }
+}
+
+.auCont2 {
+    @extend .auCont;
+    padding: 0.48em 0.40em 0.48em 0.40em !important;
+    i {
+        color: $green;
+    }
+}
+
+.auCont {
+    display: inline-block;
+    cursor: pointer;
+    background: $white;
+    border-radius: 2em;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    padding: 0.4em 0.55em 0.4em 0.55em;
+    
+    .bgT {
+    height: 2px;
+    background-color: $green;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+    .bgT1 {
+    @extend .bgT;
+    width: 25px;
+}
+
+    .bgT2 {
+    @extend .bgT;
+    width: 25px;
+}
+
+    .bgT3 {
+    @extend .bgT;
+    width: 25px;
+}
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $titleFont;
+    color: $green;
+}
+
+body, p, span {
+    font-family: $mainFont;
+    color: $green;
+}
+
+h1 {
+    font-size: calc(20px + 2vw) !important;
+}
+
+p {
+    font-size: calc(10px + 0.5vw) !important;
+}
+
+.mt-10 {
+    margin-top: 7em;
+}
+
+.vh-30 {
+    min-height: 30vh;
+    height: 30%;
+}
+
+.vh-50 {
+    min-height: 50vh;
+    height: 50%;
+}
+
+.ladder {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    z-index: 999;
+}
+
+header {
+    min-height: 100vh;
+    height: 100%;
+}
+
+#animaT0, #animaT1, #animaT2, #animaT3, #animaT4 {
+    transition: all ease 2s;
+    opacity: 0;
+}
+
+.showMe {
+    opacity: 1 !important;
+    transition: all ease 2s;
+}
+
+hr {
+    border: 1px solid $green !important;
+}
+
+
+.bOne {
+    background-color: $custom;
+    background-image: url('/assets/materials/mushroom.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.btn-left {
+    background: transparent;
+    transform: rotate(90deg) !important;
+    border: solid 1px $green !important;
+    border-radius: 5em !important;
+    padding: 9px 15px 9px 15px !important;
+    transition: all ease 0.5s;
+    &:hover {
+        background: $green;
+        img {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(103%) contrast(200%) !important;
+        }
+    }
+}
+
+.btn-right {
+    background: $white;
+    transform: rotate(-90deg) !important;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    border: solid 1px $white !important;
+    border-radius: 5em !important;
+    padding: 9px 15px 9px 15px !important;
+    transition: all ease 0.5s;
+    &:hover {
+        background: $green;
+        border: solid 1px $green !important;
+        img {
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(103%) contrast(200%) !important;
+        }
+    }
+}
+
+.swiper {
+    position: absolute;
+    top: 100%;
+}
