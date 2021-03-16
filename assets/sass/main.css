@@ -293,7 +293,7 @@ hr {
 }
 
 .bTwo {
-  background-image: url("http://test.fikirbuzzprojects.com/bagdatdogallik/assets/materials/sec3bg.png");
+  background-image: url("http://test.fikirbuzzprojects.com/bagdatdogallik/assets/materials/sec3bg.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -373,7 +373,7 @@ h3 {
 }
 
 .bFour {
-  background: url("http://test.fikirbuzzprojects.com/bagdatdogallik/assets/materials/kitchen.png");
+  background: url("http://test.fikirbuzzprojects.com/bagdatdogallik/assets/materials/kitchen.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -390,5 +390,27 @@ h3 {
 .bFour iframe {
   padding: 1em;
   border: solid 1px #acaba9;
+}
+
+.customNew {
+  border: solid 1px #106C5A !important;
+  border-radius: 0px !important;
+  color: #106C5A !important;
+  background: transparent;
+}
+
+.customNew:hover {
+  color: #fff !important;
+  background: #106C5A;
+}
+
+.border-new {
+  border: solid 1px #106C5A;
+  width: 250px;
+  background: #fff;
+  padding: 1.3em 2em 1em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
 }
 /*# sourceMappingURL=main.css.map */
