@@ -240,12 +240,12 @@ header {
     }  
 }
 
-/*
+
 
 #animaT0, #animaT1, #animaT2, #animaT3, #animaT4 {
     transition: all ease 2s;
     opacity: 0;
-} */
+}
 
 .showMe {
     opacity: 1 !important;
@@ -433,6 +433,8 @@ h3 {
     border-radius: 0px !important;
     color: $green !important;
     background: transparent;
+    outline: $clear;
+    box-shadow: $reset;
     &:hover {
         color: $white !important;
         border-color: $red !important;

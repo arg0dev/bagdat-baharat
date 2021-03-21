@@ -220,12 +220,12 @@ header h1 {
   font-size: calc(20px + 3vw) !important;
 }
 
-/*
-
 #animaT0, #animaT1, #animaT2, #animaT3, #animaT4 {
-    transition: all ease 2s;
-    opacity: 0;
-} */
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+  opacity: 0;
+}
+
 .showMe {
   opacity: 1 !important;
   -webkit-transition: all ease 2s;
@@ -425,6 +425,9 @@ h3 {
   border-radius: 0px !important;
   color: #106C5A !important;
   background: transparent;
+  outline: none !important;
+  -webkit-box-shadow: initial !important;
+          box-shadow: initial !important;
 }
 
 .customNew:hover {
