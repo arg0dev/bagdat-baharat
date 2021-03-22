@@ -29,6 +29,14 @@ $red: #e23629;
             font-size: 18px !important;
         }
     }
+    .mobi {
+        height: 250px !important;
+        margin-bottom: 1em;
+    } 
+
+    iframe {
+        height: 250px;
+    }
 }
 
 
@@ -79,7 +87,7 @@ video {
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    object-fit: cover;
+    object-fit: cover; 
     object-position: bottom;
     z-index: -1;
     opacity: 1;
@@ -146,7 +154,7 @@ button {
     -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
     box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
     img {
-        margin-top: -0.2em
+        margin-top: -0.2em;
     }
 }
 
@@ -155,6 +163,7 @@ button {
     padding: 0.48em 0.40em 0.48em 0.40em !important;
     i {
         color: $green;
+        overflow: visible !important;
     }
 }
 
@@ -166,6 +175,7 @@ button {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.3);
     -moz-box-shadow:    0px 0px 30px 0px rgba(50, 50, 50, 0.3);
     box-shadow:         0px 0px 30px 0px rgba(50, 50, 50, 0.3);
+    overflow: auto;
     padding: 0.4em 0.55em 0.4em 0.55em;
     
     .bgT {
@@ -339,12 +349,12 @@ hr {
 
 .btn-left-flat {
     transform: rotate(90deg) !important;
-    background: $white;
+    background: transparent;
 }
 
 .btn-right-flat {
     transform: rotate(-90deg) !important;
-    background: $white;
+    background: transparent;
 }
 
 .btnBg {
@@ -412,7 +422,7 @@ h3 {
     background-size: cover;
     h3 {
         font-weight: 400;
-        font-size: calc(10px + 0.8vw);
+        font-size: calc(12px + 0.8vw);
         color: $green;
     }
     iframe {
